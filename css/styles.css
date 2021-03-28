@@ -136,15 +136,23 @@ section.mySkills {
     padding: 10px;
     align-items: center;
 }
-@media only screen and (max-width: 600){
-    .flexContainer {
-        width: auto;
-        grid-template-areas: auto;
-        grid-template-rows: 300px 300px 300px;
+@media only screen and (max-width: 600px) {
+    .workGrid {
+        grid-template-rows: 300px 300px 300px 300px 300px 300px;
         grid-template-columns: 1fr;
-
+        grid-template-areas:
+        "projectImage1"
+        "project1"
+        "projectImage2"
+        "project2"
+        "projectImage3"
+        "project3"
+        ;
     }
-    .mySkills {
+    .flexContainer {
+        width: 100%;
+        flex-direction: column;
+        margin: 24px 5px;
         display: flex;
     }
     #navigation {
